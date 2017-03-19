@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.yu_gi_ohcalculator.MainActivity">
+
+    <!-- Player stats -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_weight1"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/life_Points_Player_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/backgroundBlue"
+                android:fontFamily="sans-serif-light"
+                tools:text="8000"
+                android:textSize="@dimen/life_points_text_size" />
+
+        <View
+            android:layout_width="@dimen/view1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/life_Points_Player_2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundBlue"
+                android:fontFamily="sans-serif-light"
+                tools:text="8000"
+                android:textSize="@dimen/life_points_text_size" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view1dp"
+        android:background="@android:color/white" />
+    <!-- Input and +/- functions -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/subtract_add_Buttons"
+            android:id="@+id/player1add"
+            android:layout_alignParentLeft="true"
+            android:text="@string/plus_symbol" />
+
+
+        <Button
+            android:id="@+id/player1subtract"
+            style="@style/subtract_add_Buttons"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/player1add"
+            android:text="@string/minus_symbol" />
+
+        <TextView
+            android:id="@+id/player_Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/start_input"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/input_text_size" />
+
+        <Button
+            android:id="@+id/player2add"
+            style="@style/subtract_add_Buttons"
+            android:layout_alignParentRight="true"
+            android:text="@string/plus_symbol" />
+
+        <Button
+            android:id="@+id/player2subtract"
+            style="@style/subtract_add_Buttons"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/player2add"
+            android:text="@string/minus_symbol" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_big_blue"
+        android:background="@color/backgroundBlue" />
+
+    <!-- Calculator Display -->
+    <LinearLayout
+        android:id="@+id/button_panel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/zero" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/one" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/two" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/three" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/four" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/five" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/six" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/seven" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/eight" />
+
+        <View style="@style/verticalView" />
+
+        <Button
+            style="@style/numberButtons"
+            android:onClick="number"
+            android:text="@string/nine" />
+
+    </LinearLayout>
+
+    <!-- Coin, Reset, Dice -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/bottomButtons"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+
+        <View
+            android:layout_width="@dimen/view1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/coin"
+            style="@style/bottomButtons"
+            android:layout_weight="1"
+            android:onClick="coin"
+            android:text="@string/coin" />
+
+        <View
+            android:layout_width="@dimen/view1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/dice"
+            style="@style/bottomButtons"
+            android:layout_weight="1"
+            android:onClick="dice"
+            android:text="@string/dice" />
+
+        <View
+            android:layout_width="@dimen/view1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/bottomButtons"
+            android:layout_weight="1"
+            android:onClick="clear"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</LinearLayout>

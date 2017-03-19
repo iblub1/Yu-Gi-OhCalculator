@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">LifePoints Calculator</string>
+
+    <string name="start_input">0000</string>
+    <string name="plus_symbol">+</string>
+    <string name="minus_symbol">-</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <string name="reset">reset</string>
+    <string name="coin">coin</string>
+    <string name="dice">dice</string>
+    <string name="clear">clear</string>
+    <string name="heads">heads</string>
+    <string name="tails">tails</string>
+
+    <string name="toHigh">"Your number is to high!"</string>
+    <string name="winner1">"Winner:\n Player 1"</string>
+    <string name="winner2">"Winner:\n Player 2"</string>
+
+    <string-array name="character_name">
+        <item>Akiza Izinski</item>
+        <item>Yami Bakura</item>
+        <item>Bandit Keith</item>
+        <item>Bonz</item>
+        <item>Chazz Princeton</item>
+        <item>Dartz</item>
+        <item>Ishizu Ishtar</item>
+        <item>Jack Atlas</item>
+        <item>Jaden Yuki</item>
+        <item>Joey Wheeler</item>
+        <item>Seto Kaiba</item>
+        <item>Mai Valentine</item>
+        <item>Yami Marik</item>
+        <item>Maximillion Pegasus</item>
+        <item>Rex Raptor</item>
+        <item>Solomon Muto</item>
+        <item>Syrus Truesdale</item>
+        <item>Téa Gardner</item>
+        <item>Tristan Taylor</item>
+        <item>Weevil Underwood</item>
+        <item>Yami Yugi</item>
+        <item>Yugi Muto</item>
+        <item>Yuma Tsukumo</item>
+        <item>Yusei Fudo</item>
+        <item>Yuya Sakaki</item>
+    </string-array>
+
+
+</resources>

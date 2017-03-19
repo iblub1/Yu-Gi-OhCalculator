@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDe0e0e0">
+
+    <TextView
+
+        android:text="Winner: \nPlayer 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/winner"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/life_points_text_size"/>
+
+</RelativeLayout>
