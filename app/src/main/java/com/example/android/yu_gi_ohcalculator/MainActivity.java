@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         displayLifePoints(lifePoints2, player = false);
         loadCharacter(characterImageID1, characterImageID2);
 
-        /** Creates two MediaPlayers for the sound effects */
+        /** Creates two MediaPlayers for the sound effects (needs to be in OneCreate)*/
         final MediaPlayer lifePointsReset = MediaPlayer.create(this, R.raw.life_points_reset);
         final MediaPlayer lifePointsDecrease = MediaPlayer.create(this, R.raw.life_points_decrease);
 
